@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inter-font{
+    font-family: "Inter", sans-serif;
+    
+}
+body{
+    /* background-color: rgba(0, 0, 0, 1) ; */
+    color: white;
+   background: linear-gradient(180.00deg, rgb(10, 8, 8) 0%,rgba(0, 0, 0, 0) 100%);
+}
+                               /* navbar */
+  #navwithbanner {
+    max-width: 1440px;
+    height: 715px;
+  }                            
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 73%;
+    margin: 0 auto;
+    margin-top: 20px;
+    align-items: center;
+}
+nav>h2{
+    color: #E6533C;
+    font-weight: 800;
+    font-size: 36px;
+    font-style: italic;
+}
+.right-nav .about-right{
+    padding-right: 10px;
+}
+.right-nav>ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 67px;
+    border: 1px solid rgb(71, 70, 70);
+    font-size: 18px;
+    padding: 2px 5px;
+    border-radius: 39px;
+}
+.home{
+    border-radius: 46px;
+    background: rgba(230, 83, 60, 1);
+    padding: 8px 10px;
+}
+nav>span{
+    display:none;
+}
+                      /* banner */
+   .banner-container{
+    display: flex;
+    max-width: 73%;
+    margin: 0 auto;
+    min-height: 400px;
+    padding: 10px;
+   
+    
+   }
+   .banner-text{
+    width: 520px;
+    height: 281px;
+    width: 50%;
+     }
+    .banner-text>h1{
+        font-size: 78px;
+    }
+    .banner-text>p{
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+ .banner-image{
+     width: 50%;
+     display: flex;
+     justify-content: end;
+     position: relative;
+   } 
+   .banner-image>img{
+ width: 349px;
+ height: 580px;
+
+   }
+   .container-btn>button{
+    width: 200px;
+    height: 54px;
+    border-radius: 48px;
+    border: none;
+     border: 1px solid gray;
+   }              
+   .btn-design-one{
+    background-color: #E6533C;
+    color: #FFFFFF; 
+   }
+   .btn-design-two{
+    background-color: transparent;
+    color: white;
+   
+   }
+   .tooltip{
+    background-color: rgba(128, 128, 128, 0.397);
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    width: 193px;
+    height: 98px;
+    top:20%;
+    right: -10%;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-radius: 12px;
+   }
+   .tooltiptwo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(128, 128, 128, 0.397);
+    position: absolute;
+    left:30%;
+    top: 60%;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-radius: 12px;
+    padding: 10px;
+    width: 193px;
+    height: 98px}
+    .ball{
+        width: 40px;
+        height: 40px;
+        background-color: #E6533C;
+        border-radius: 50%;
+    }
+
+                    /* Responsive sector */
+                    /* Mobile Responsive */
+@media screen and (max-width: 576px) {
+
+
+    nav > span {
+        display: inline;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .right-nav > ul {
+        display: none;
+    }
+
+    
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    
+    .banner-text {
+        width: 90%;
+    }
+    .banner-text > h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    .banner-text > p {
+        font-size: 14px;
+        margin: 15px 0;
+    }
+
+   
+    .banner-image {
+        width: 90%;
+        justify-content: center;
+        position: relative;
+        margin-top: 20px;
+    }
+    .banner-image > img {
+        width: 80%;
+        height: auto;
+    }
+
+    
+    .tooltip {
+        top: 10%;
+        right: 5%;
+        width: 140px;
+        height: 70px;
+        padding: 10px;
+        font-size: 12px;
+        position: absolute;
+    }
+    .tooltiptwo {
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 140px;
+        height: 70px;
+        padding: 10px;
+        font-size: 12px;
+        position: absolute;
+    }
+
+   
+    .container-btn {
+        flex-direction: row !important;
+        gap: 10px;
+        margin-top: 15px;
+        flex-wrap: nowrap; 
+    }
+    .container-btn > button {
+        width: 45%;
+        min-width: 120px;
+    }
+}
