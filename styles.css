@@ -9,8 +9,8 @@
 }
                    /* shared style */
      .container{
-    max-width: 1060px;
-    margin: 0 auto;
+    width:min(90%, 1060px);
+    margin:0 auto;
      }              
 body{
     background-color: rgba(0, 0, 0, 1) ;
@@ -18,11 +18,8 @@ body{
    /* background: linear-gradient(180.00deg, rgb(10, 8, 8) 0%,rgba(0, 0, 0, 0) 100%); */
 }
                                /* navbar */
-  #navwithbanner {
-    max-width: 1440px;
-    height: 715px;
-  }                            
-nav{
+                          
+.nav-container{
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -59,17 +56,20 @@ nav>span{
                       /* banner */
    .banner-container{
     display: flex;
-    max-width: 73%;
-    margin: 0 auto;
-    min-height: 400px;
-    padding: 10px;
+    /* max-width: 73%; */
+    /* margin: 0 auto; */
+    /* min-height: 400px; */
+    /* padding: 10px; */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
    
     
    }
    .banner-text{
     width: 520px;
-    height: 281px;
-    width: 50%;
+    /* height: 281px; */
+    /* width: 50%; */
      }
     .banner-text>h1{
         font-size: 78px;
@@ -79,14 +79,15 @@ nav>span{
         margin-bottom: 28px;
     }
  .banner-image{
-     width: 50%;
-     display: flex;
-     justify-content: end;
+     /* width: 50%; */
+     /* display: flex; */
      position: relative;
+     width: 349px;
    } 
    .banner-image>img{
- width: 349px;
- height: 580px;
+ width: 100%;
+ height: auto;
+
 
    }
 
@@ -95,8 +96,7 @@ nav>span{
     width: 200px;
     height: 54px;
     border-radius: 48px;
-    border: none;
-     border: 1px solid gray;
+     
    }              
    .btn-design-one{
     background-color: #E6533C;
@@ -105,6 +105,7 @@ nav>span{
    .btn-design-two{
     background-color: transparent;
     color: white;
+    border: 1px solid gray;
    
    }
    .tooltip{
@@ -140,37 +141,38 @@ nav>span{
         background-color: #E6533C;
         border-radius: 50%;
     }
-    /* habbit section */
-    .habbit-container .habit-text{
+                                /* habbit section */
+    .habit-container .habit-text{
     max-width: 670px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom:58px
     }
-    .habbit-container .habbit-img{
+    .habit-container .habit-img{
         display:grid;
         grid-template-columns: repeat(4,1fr);
+        
         text-align: center;
         width: 100%;
         gap:40px;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
-    .habbit-img .img-card{
+    .habit-img .img-card{
       max-width:231px;
       width: 100%;
     }
-    .habbit-container .habbit-img img{
+    .habit-container .habit-img img{
         border-radius: 100px;
         margin-bottom: 30px;
     }
-    .habbit-container .habbit-img h3{
+    .habit-container .habit-img h3{
         font-size: 18px;
         margin-bottom: 6px;
         font-style: Semi Bold;
         
     }
-    .habbit-container .habbit-img p{
+    .habit-container .habit-img p{
         color: rgba(255, 255, 255, 0.5);
     }
 
@@ -247,17 +249,17 @@ nav>span{
     }
 
    
-    .container-btn {
+    /* .container-btn {
         flex-direction: row !important;
         gap: 10px;
         margin-top: 15px;
-        flex-wrap: nowrap;
-    }
+        flex-wrap: nowrap; */
+    /* } */
     .container-btn > button {
         width: 45%;
         min-width: 120px;
     }
-    .habbit-container .habbit-img{
+    .habit-container .habit-img{
         margin-top: 20px;
         grid-template-columns: repeat(1, 1fr);
        align-items: center;
