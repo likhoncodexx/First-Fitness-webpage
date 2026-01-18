@@ -1,0 +1,91 @@
+/* Responsive sector */
+                    /* Mobile Responsive */
+@media screen and (max-width: 576px) {
+
+
+    nav > span {
+        display: inline;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .right-nav > ul {
+        display: none;
+    }
+
+    
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    
+    .banner-text {
+        width: 90%;
+    }
+    .banner-text > h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    .banner-text > p {
+        font-size: 14px;
+        margin: 15px 0;
+    }
+
+   
+    .banner-image {
+        width: 90%;
+        justify-content: center;
+        position: relative;
+        margin-top: 20px;
+    }
+    .banner-image > img {
+        width: 80%;
+        height: auto;
+    }
+
+    
+    .tooltip {
+        top: 10%;
+        right: 5%;
+        width: 140px;
+        height: 70px;
+        padding: 10px;
+        font-size: 12px;
+        position: absolute;
+    }
+    .tooltiptwo {
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 140px;
+        height: 70px;
+        padding: 10px;
+        font-size: 12px;
+        position: absolute;
+    }
+
+   
+    /* .container-btn {
+        flex-direction: row !important;
+        gap: 10px;
+        margin-top: 15px;
+        flex-wrap: nowrap; */
+    /* } */
+    .container-btn > button {
+        width: 45%;
+        min-width: 120px;
+    }
+    .habit-container .habit-img{
+        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+       align-items: center;
+       justify-items: center;
+        row-gap: 50px;
+        column-gap: 12px;
+       
+       
+    }
+}
+                 
